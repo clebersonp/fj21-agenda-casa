@@ -13,7 +13,9 @@ import br.com.caelum.modelo.Contato;
 
 public class ContatoDao {
 
-  private final Connection connection;
+  private Connection connection;
+
+  public ContatoDao() {};
 
   public ContatoDao(final Connection connection) {
     this.connection = connection;
